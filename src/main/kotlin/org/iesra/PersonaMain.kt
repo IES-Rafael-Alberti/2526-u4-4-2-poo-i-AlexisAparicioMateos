@@ -39,4 +39,19 @@ fun main() {
 
     val sonIguales = persona2 == persona3
     println("\n¿Persona 2 y Persona 3 son iguales? $sonIguales")
+
+    val personas = listOf(
+        Persona(64.7, 1.72, "Julia"),
+        Persona(85.0, 1.82, "Carlos"),
+        Persona(55.0, 1.60, "Laura"),
+        Persona(92.3, 1.75, "Miguel"),
+        Persona(70.0, 1.78, "Ana")
+    )
+
+    for (persona in personas) {
+        println(persona.saludar())
+        println(persona.obtenerDesc())
+        println()
+    }
+
 }
