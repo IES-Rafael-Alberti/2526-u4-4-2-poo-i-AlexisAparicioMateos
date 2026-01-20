@@ -1,0 +1,70 @@
+2026-01-20 10:36:34 INFO  MainLogger - Rectangulo(base=2.2, altura=3.1)
+2026-01-20 10:36:34 INFO  MainLogger - Area rectángulo: 6.820000000000001
+2026-01-20 10:36:34 INFO  MainLogger - Perimetro rectángulo: 10.600000000000001
+2026-01-20 10:36:34 INFO  MainLogger - Rectangulo(base=2.3, altura=4.5)
+2026-01-20 10:36:34 INFO  MainLogger - Area rectángulo: 10.35
+2026-01-20 10:36:34 INFO  MainLogger - Perimetro rectángulo: 13.6
+2026-01-20 10:36:34 INFO  MainLogger - Rectangulo(base=5.2, altura=7.1)
+2026-01-20 10:36:34 INFO  MainLogger - Area rectángulo: 36.92
+2026-01-20 10:36:34 INFO  MainLogger - Perimetro rectángulo: 24.6
+2026-01-20 10:36:34 INFO  MainLogger - Rectangulo(base=6.7, altura=8.4)
+2026-01-20 10:36:34 INFO  MainLogger - Area rectángulo: 56.28
+2026-01-20 10:36:34 INFO  MainLogger - Perimetro rectángulo: 30.200000000000003
+2026-01-20 11:50:50 INFO  MainLogger - Persona(nombre='', peso=70.0, altura=1.75, imc=22,86)
+2026-01-20 11:50:50 INFO  MainLogger - Persona(nombre='Alexis', peso=64.0, altura=1.65, imc=23,51)
+2026-01-20 11:50:50 INFO  MainLogger - Persona(nombre='Arantxa', peso=68.0, altura=1.68, imc=24,09)
+2026-01-20 11:50:50 INFO  MainLogger - 
+Introduce el nombre de la persona 1:
+2026-01-20 11:51:00 INFO  MainLogger - Persona 1 -> Nombre: Pepe, Peso: 70.0, Altura: 1.75
+2026-01-20 11:51:00 INFO  MainLogger - 
+Persona 3 antes del cambio:
+2026-01-20 11:51:00 INFO  MainLogger - Peso: 68.0, Altura: 1.68, IMC: 24,09
+2026-01-20 11:51:00 INFO  MainLogger - Persona 3 después del cambio:
+2026-01-20 11:51:00 INFO  MainLogger - Peso: 68.0, Altura: 1.8, IMC: 20,99
+2026-01-20 11:51:00 INFO  MainLogger - 
+Persona 2:
+2026-01-20 11:51:00 INFO  MainLogger - Persona(nombre='Alexis', peso=64.0, altura=1.8, imc=19,75)
+2026-01-20 11:51:00 INFO  MainLogger - Persona 3:
+2026-01-20 11:51:00 INFO  MainLogger - Persona(nombre='Arantxa', peso=68.0, altura=1.8, imc=20,99)
+2026-01-20 11:51:00 INFO  MainLogger - 
+¿Persona 2 y Persona 3 son iguales? false
+2026-01-20 11:51:00 INFO  MainLogger - Hola, me llamo Julia
+2026-01-20 11:51:00 INFO  MainLogger - Julia con una altura de 1,72m (Por debajo de la media) y un peso 64,7kg (Por debajo de la media) tiene un IMC de 21,87 (peso saludable)
+2026-01-20 11:51:00 INFO  MainLogger - Hola, me llamo Carlos
+2026-01-20 11:51:00 INFO  MainLogger - Carlos con una altura de 1,82m (Por encima de la media) y un peso 85,0kg (Por encima de la media) tiene un IMC de 25,66 (sobrepeso)
+2026-01-20 11:51:00 INFO  MainLogger - Hola, me llamo Laura
+2026-01-20 11:51:00 INFO  MainLogger - Laura con una altura de 1,60m (Por debajo de la media) y un peso 55,0kg (Por debajo de la media) tiene un IMC de 21,48 (peso saludable)
+2026-01-20 11:51:00 INFO  MainLogger - Hola, me llamo Miguel
+2026-01-20 11:51:00 INFO  MainLogger - Miguel con una altura de 1,75m (Por encima de la media) y un peso 92,3kg (Por encima de la media) tiene un IMC de 30,14 (obesidad)
+2026-01-20 11:51:00 INFO  MainLogger - Hola, me llamo Ana
+2026-01-20 11:51:00 INFO  MainLogger - Ana con una altura de 1,78m (Por encima de la media) y un peso 70,0kg (Por encima de la media) tiene un IMC de 22,09 (peso saludable)
+2026-01-20 11:57:55 INFO  MainLogger - ---- COCHES CREADOS CORRECTAMENTE ----
+2026-01-20 11:57:55 INFO  MainLogger - Coche(marca='Nissan', modelo='Micra', caballos=95, puertas=5, matricula='3845KLM', color='Rojo')
+2026-01-20 11:57:55 INFO  MainLogger - Coche(marca='Volkswagen', modelo='Golf', caballos=150, puertas=5, matricula='7291JRT', color='Blanco')
+2026-01-20 11:57:55 INFO  MainLogger - Coche(marca='Toyota', modelo='Corolla', caballos=122, puertas=5, matricula='5812MNP', color='Gris')
+2026-01-20 11:57:55 INFO  MainLogger - Coche(marca='BMW', modelo='Serie1', caballos=170, puertas=3, matricula='9034LZX', color='Negro')
+2026-01-20 11:57:55 INFO  MainLogger - Coche(marca='Dacia', modelo='Sandero', caballos=90, puertas=5, matricula='1478HBC', color='Azul')
+2026-01-20 11:57:55 INFO  MainLogger - 
+---- PRUEBAS DE ERRORES ----
+2026-01-20 11:57:55 WARN  MainLogger - Error marca nula → La marca no puede ser nula ni vacía
+2026-01-20 11:57:55 WARN  MainLogger - Error modelo vacío → El modelo no puede ser nulo ni vacío
+2026-01-20 11:57:55 WARN  MainLogger - Error caballos bajos → Los caballos deben estar entre 70 y 700
+2026-01-20 11:57:55 WARN  MainLogger - Error caballos altos → Los caballos deben estar entre 70 y 700
+2026-01-20 11:57:55 WARN  MainLogger - Error puertas bajas → El número de puertas debe estar entre 3 y 5
+2026-01-20 11:57:55 WARN  MainLogger - Error puertas altas → El número de puertas debe estar entre 3 y 5
+2026-01-20 11:57:55 WARN  MainLogger - Error matrícula → La matrícula debe tener 7 caracteres
+2026-01-20 11:57:55 WARN  MainLogger - Error color nulo → El color no puede ser nulo
+2026-01-20 12:02:50 INFO  MainLogger - Introduce un tiempo:
+2026-01-20 12:03:01 INFO  MainLogger - Tiempo creado → 22h 23m 24s
+2026-01-20 12:03:01 INFO  MainLogger - 
+Introduce un tiempo t:
+2026-01-20 12:03:38 INFO  MainLogger - Tiempo t → 00h 01m 01s
+2026-01-20 12:03:38 INFO  MainLogger - Incrementado → 22h 24m 25s
+2026-01-20 12:03:38 INFO  MainLogger - Decrementado → 22h 23m 24s
+2026-01-20 12:03:38 INFO  MainLogger - Comparación → 1
+2026-01-20 12:03:38 INFO  MainLogger - Copia → 22h 23m 24s
+2026-01-20 12:03:38 INFO  MainLogger - Copiado desde t → 00h 01m 01s
+2026-01-20 12:03:38 INFO  MainLogger - Suma → 00h 02m 02s
+2026-01-20 12:03:38 INFO  MainLogger - Resta → 00h 00m 00s
+2026-01-20 12:03:38 INFO  MainLogger - ¿Tiempo > t? false
+2026-01-20 12:03:38 INFO  MainLogger - ¿Tiempo < t? false

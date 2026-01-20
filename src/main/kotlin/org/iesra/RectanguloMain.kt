@@ -1,3 +1,8 @@
+import org.slf4j.LoggerFactory
+
+private val logger = LoggerFactory.getLogger("MainLogger")
+
+
 fun main () {
     val rectangulo1 = Rectangulo(2.2, 3.1)
     val rectangulo2 = Rectangulo(2.3, 4.5)
@@ -12,13 +17,12 @@ fun main () {
 
 fun mostrarInfoRectangulo (rectangulo: Rectangulo) {
     val infoRectangulo = rectangulo.toString()
-    println(infoRectangulo)
+    logger.info(infoRectangulo)
 
     val area = rectangulo.area()
-    println("Area rectángulo: $area")
+    logger.info("Area rectángulo: $area")
 
     val perimetro = rectangulo.perimetro()
-    println("Perimetro rectángulo: $perimetro")
+    logger.info("Perimetro rectángulo: $perimetro")
 
-    println()
 }

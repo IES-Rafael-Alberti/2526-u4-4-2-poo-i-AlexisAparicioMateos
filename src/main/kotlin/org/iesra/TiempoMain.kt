@@ -1,8 +1,12 @@
 package org.iesra
 
+import org.slf4j.LoggerFactory
+
+private val logger = LoggerFactory.getLogger("MainLogger")
+
 fun leerInt(mensaje: String): Int? {
     print(mensaje)
-    val input = readLine()
+    val input = readlnOrNull()
     return if (input.isNullOrBlank()) null else input.toInt()
 }
 
@@ -15,39 +19,39 @@ fun crearTiempoPorTeclado(): Tiempo {
 
 fun main() {
 
-    println("Introduce un tiempo:")
+    logger.info("Introduce un tiempo:")
     val tiempo = crearTiempoPorTeclado()
-    println("Tiempo creado → $tiempo")
+    logger.info("Tiempo creado → $tiempo")
 
-    println("\nIntroduce un tiempo t:")
+    logger.info("\nIntroduce un tiempo t:")
     val t = crearTiempoPorTeclado()
-    println("Tiempo t → $t")
+    logger.info("Tiempo t → $t")
 
     if (tiempo.incrementar(t))
-        println("Incrementado → $tiempo")
+        logger.info("Incrementado → $tiempo")
     else
-        println("ERROR: se supera 23:59:59")
+        logger.warn("ERROR: se supera 23:59:59")
 
     if (tiempo.decrementar(t))
-        println("Decrementado → $tiempo")
+        logger.info("Decrementado → $tiempo")
     else
-        println("ERROR: se baja de 00:00:00")
+        logger.warn("ERROR: se baja de 00:00:00")
 
     val comp = tiempo.comparar(t)
-    println("Comparación → $comp")
+    logger.info("Comparación → $comp")
 
     val copia = tiempo.copiar()
-    println("Copia → $copia")
+    logger.info("Copia → $copia")
 
     tiempo.copiar(t)
-    println("Copiado desde t → $tiempo")
+    logger.info("Copiado desde t → $tiempo")
 
     val suma = tiempo.sumar(t)
-    println("Suma → ${suma ?: "ERROR"}")
+    logger.info("Suma → ${suma ?: "ERROR"}")
 
     val resta = tiempo.restar(t)
-    println("Resta → ${resta ?: "ERROR"}")
+    logger.info("Resta → ${resta ?: "ERROR"}")
 
-    println("¿Tiempo > t? ${tiempo.esMayorQue(t)}")
-    println("¿Tiempo < t? ${tiempo.esMenorQue(t)}")
+    logger.info("¿Tiempo > t? ${tiempo.esMayorQue(t)}")
+    logger.info("¿Tiempo < t? ${tiempo.esMenorQue(t)}")
 }

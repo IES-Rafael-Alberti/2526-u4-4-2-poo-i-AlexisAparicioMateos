@@ -1,16 +1,20 @@
 package org.iesra
 
+import org.slf4j.LoggerFactory
+
+private val logger = LoggerFactory.getLogger("MainLogger")
+
 fun main() {
 
     val persona1 = Persona(70.0, 1.75)
     val persona2 = Persona(64.0, 1.65, "Alexis")
     val persona3 = Persona(68.0, 1.68, "Arantxa")
 
-    println(persona1)
-    println(persona2)
-    println(persona3)
+    logger.info("{}",persona1)
+    logger.info("{}",persona2)
+    logger.info("{}",persona3)
 
-    println("\nIntroduce el nombre de la persona 1:")
+    logger.info("\nIntroduce el nombre de la persona 1:")
     var nombreIntroducido: String
 
     do {
@@ -19,26 +23,26 @@ fun main() {
 
     persona1.nombre = nombreIntroducido
 
-    println("Persona 1 -> Nombre: ${persona1.nombre}, Peso: ${persona1.peso}, Altura: ${persona1.altura}")
+    logger.info("Persona 1 -> Nombre: ${persona1.nombre}, Peso: ${persona1.peso}, Altura: ${persona1.altura}")
 
-    println("\nPersona 3 antes del cambio:")
-    println("Peso: ${persona3.peso}, Altura: ${persona3.altura}, IMC: ${"%.2f".format(persona3.imc)}")
+    logger.info("\nPersona 3 antes del cambio:")
+    logger.info("Peso: ${persona3.peso}, Altura: ${persona3.altura}, IMC: ${"%.2f".format(persona3.imc)}")
 
     persona3.altura = 1.80
 
-    println("Persona 3 después del cambio:")
-    println("Peso: ${persona3.peso}, Altura: ${persona3.altura}, IMC: ${"%.2f".format(persona3.imc)}")
+    logger.info("Persona 3 después del cambio:")
+    logger.info("Peso: ${persona3.peso}, Altura: ${persona3.altura}, IMC: ${"%.2f".format(persona3.imc)}")
 
     persona2.altura = persona3.altura
 
-    println("\nPersona 2:")
-    println(persona2)
+    logger.info("\nPersona 2:")
+    logger.info("{}",persona2)
 
-    println("Persona 3:")
-    println(persona3)
+    logger.info("Persona 3:")
+    logger.info("{}",persona3)
 
     val sonIguales = persona2 == persona3
-    println("\n¿Persona 2 y Persona 3 son iguales? $sonIguales")
+    logger.info("\n¿Persona 2 y Persona 3 son iguales? $sonIguales")
 
     val personas = listOf(
         Persona(64.7, 1.72, "Julia"),
@@ -49,9 +53,7 @@ fun main() {
     )
 
     for (persona in personas) {
-        println(persona.saludar())
-        println(persona.obtenerDesc())
-        println()
+        logger.info(persona.saludar())
+        logger.info(persona.obtenerDesc())
     }
-
 }
