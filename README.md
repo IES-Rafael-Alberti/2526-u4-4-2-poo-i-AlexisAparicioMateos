@@ -17,6 +17,24 @@ Apóyate en los siguientes recursos para realizar la práctica:
   - **Nombre y Apellidos:** Alexis Aparicio Mateos
   - **Correo electrónico:** aapamat852@g.educaand.es
 
+## Código Fuente
+
+Ejercicio 4.1 - Rectangulo:
+
+https://github.com/IES-Rafael-Alberti/2526-u4-4-2-poo-i-AlexisAparicioMateos/blob/9c21744240d9eff81e34c6b2ed6e7abc60d74026/src/main/kotlin/org/iesra/RectanguloMain.kt#L1-L28
+
+Ejercicio 4.2 y 4.3 - Persona:
+
+https://github.com/IES-Rafael-Alberti/2526-u4-4-2-poo-i-AlexisAparicioMateos/blob/9c21744240d9eff81e34c6b2ed6e7abc60d74026/src/main/kotlin/org/iesra/PersonaMain.kt#L1-L59
+
+Ejercicio 4.4 - Coche:
+
+https://github.com/IES-Rafael-Alberti/2526-u4-4-2-poo-i-AlexisAparicioMateos/blob/9c21744240d9eff81e34c6b2ed6e7abc60d74026/src/main/kotlin/org/iesra/CocheMain.kt#L1-L71
+
+Ejercicio 4.5 - Tiempo:
+
+https://github.com/IES-Rafael-Alberti/2526-u4-4-2-poo-i-AlexisAparicioMateos/blob/9c21744240d9eff81e34c6b2ed6e7abc60d74026/src/main/kotlin/org/iesra/TiempoMain.kt#L1-L57
+
 ## Referencias y Fuentes
 
 [Teoria sobre POO](https://revilofe.github.io/section1/u04/teoria/PROG-U4.3.-kotlinPOO/)
